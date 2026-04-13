@@ -1,0 +1,64 @@
+{
+  "teaching_point": "An object at rest will remain at rest unless a force causes it to move.",
+  "prompt": "A toy car sits still on a smooth, wooden floor. A hand gently pushes it, and it rolls forward a short distance. The background is a brightly lit playroom.",
+  "criteria_set": [
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Depict a toy car as the primary object throughout the video",
+        "2": "Show a human hand making visible physical contact with the toy car",
+        "3": "Display the toy car and hand on a visibly smooth wooden floor for the entire duration",
+        "4": "Present the setting as a brightly lit playroom in all frames",
+        "5": "Sequence the actions so the car is stationary, then pushed by the hand, then moves forward"
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Show the toy car completely stationary before the hand makes contact",
+        "2": "Depict the hand making contact and applying force to the car before any car movement begins",
+        "3": "Show the car starting to move only after the hand pushes it",
+        "4": "Depict the car rolling forward for a short distance after being pushed and then coming to a complete stop",
+        "5": "Avoid any reversal, skipping, or time jumps in the sequence of actions"
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Show the car remaining stationary until the hand applies force",
+        "2": "Depict the car moving only while the hand is in contact or immediately after contact ends",
+        "3": "Show the car rolling forward smoothly, with no unexplained changes in speed or direction",
+        "4": "Depict the car gradually slowing down after the push, consistent with friction on a smooth wooden floor",
+        "5": "Show the wheels rotating in sync with the car's forward motion, with no sliding or floating",
+        "6": "Prevent any visible penetration, levitation, or physically impossible interactions between the hand, car, and floor"
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Demonstrate the hand pushing the toy car as the clear cause of the car's forward motion",
+        "2": "Show the car rolling forward a short, observable distance after being pushed",
+        "3": "Depict the scenario in a way that visually demonstrates cause (push) and effect (car moves)",
+        "4": "Avoid any motion of the car that is not directly caused by the hand's push"
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintain consistent lighting throughout the entire video",
+        "2": "Keep the appearance and color of the toy car, hand, and floor unchanged from start to finish",
+        "3": "Ensure the car's movement is continuous, with no visual jumps or discontinuities",
+        "4": "Prevent any sudden changes in the background or setting during the video"
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Exclude any objects other than the toy car, hand, and floor from the main action area",
+        "2": "Avoid visual effects or animations that could suggest non-physical causes for the car's motion",
+        "3": "Prevent any actions or events that contradict the teaching point, such as the car moving without being pushed",
+        "4": "Omit distracting audio or visual cues unrelated to the scenario"
+      }
+    }
+  ]
+}

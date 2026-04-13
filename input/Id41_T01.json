@@ -1,0 +1,62 @@
+{
+  "teaching_point": "A capacitor stores electrical energy in an electric field created between its plates.",
+  "prompt": "Two metal plates are positioned close to each other. An arrow visually indicates the flow of electrons from one plate to the other, creating a visible electric field between the plates. A faint glow emanates from the region between the plates.",
+  "criteria_set": [
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Depict exactly two parallel metal plates, both visible and stationary throughout the video.",
+        "2": "Display a single, clearly visible arrow indicating electron flow, oriented from one plate to the other, present only when electron flow occurs.",
+        "3": "Show a visible electric field confined strictly between the plates, represented by field lines or a clear indicator, with no extension outside the plates.",
+        "4": "Render a faint glow only in the region between the plates and only when electron flow is indicated.",
+        "5": "Maintain correct spatial separation and alignment of all elements, with no overlap or misplacement at any time."
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Initiate the arrow and faint glow simultaneously at the onset of electron flow.",
+        "2": "Terminate the arrow and faint glow simultaneously at the cessation of electron flow.",
+        "3": "Prevent the faint glow from appearing before or persisting after the arrow at any point.",
+        "4": "Synchronize the appearance and disappearance of the electric field visualization with the arrow and faint glow."
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Represent the electric field between the plates as uniform, with parallel, evenly spaced field lines.",
+        "2": "Orient the arrow to indicate electron flow from the negative to the positive plate, consistent with physics conventions.",
+        "3": "Confine all field lines and the faint glow strictly to the space between the plates, with no extension outside.",
+        "4": "Depict the faint glow only when and where electron flow is present.",
+        "5": "Avoid any depiction of field lines or electrons curving, diverging, or behaving inconsistently with the field between parallel plates."
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Visually link the onset of electron flow to the immediate appearance of both the electric field and faint glow between the plates.",
+        "2": "Demonstrate that stopping electron flow causes both the electric field and faint glow to disappear immediately.",
+        "3": "Restrict the electric field and faint glow to the region between the plates, with no presence elsewhere.",
+        "4": "Exclude any visual elements that could suggest alternative causes for the electric field or glow."
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintain the same appearance, size, and orientation of the metal plates throughout the video.",
+        "2": "Keep the direction and style of the arrow indicating electron flow unchanged whenever present.",
+        "3": "Ensure the electric field visualization remains consistent in style, density, and direction during its presence.",
+        "4": "Keep the faint glow's intensity and color constant whenever present, with no arbitrary fluctuations."
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Exclude any depiction of electrons, particles, or field lines outside the region between the plates.",
+        "2": "Avoid any visual cues such as sparks, flashes, or glows outside the intended area.",
+        "3": "Omit any additional arrows or indicators that could confuse the direction or nature of electron flow.",
+        "4": "Prevent the appearance of any visual elements that could be interpreted as electric or magnetic fields outside the region between the plates."
+      }
+    }
+  ]
+}

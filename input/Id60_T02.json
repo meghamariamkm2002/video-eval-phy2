@@ -1,0 +1,198 @@
+{
+  "teaching_point": "Different systems have different natural frequencies; resonance occurs only when the driving frequency matches the system’s natural frequency.",
+  "prompt": "Show three identical glass goblets placed side by side, each labeled with a different natural frequency (f₁, f₂, f₃). A nearby speaker emits a sound that gradually sweeps across frequencies. When the sound matches f₂, the middle goblet begins to visibly vibrate, possibly showing cracking or distortion. The other goblets remain unaffected. Use animated wave patterns to visually represent the matching frequencies.",
+  "criteria_set": [
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Display exactly three identical goblets, each with a clearly visible and correct label as specified in the prompt.",
+        "2": "Show the speaker as a distinct, visible entity within the video frame at all relevant times.",
+        "3": "Depict animated wave patterns that originate from the speaker and are visually associated with the goblets.",
+        "4": "Arrange goblets in the spatial configuration described in the prompt, maintaining visible labels throughout the video.",
+        "5": "Exclude any extra objects or labels not specified in the prompt from the video frame at all times."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Three identical goblets with correct labels are clearly visible."
+        },
+        "2": {
+          "score": 2,
+          "reason": "The speaker is distinct and visible in the relevant frames."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Animated wave patterns are shown originating from the speaker and associated with the goblets."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Goblets are arranged in the specified spatial configuration with visible labels."
+        },
+        "5": {
+          "score": 2,
+          "reason": "No extra objects or labels are present in the video frames."
+        }
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Initiate the frequency sweep before any goblet exhibits visible vibration.",
+        "2": "Show the onset of vibration in a goblet only after the frequency sweep reaches the goblet's labeled natural frequency.",
+        "3": "Depict the progression from vibration to cracking or distortion in a strictly sequential and time-ordered manner for each goblet.",
+        "4": "Cease all vibration and cracking effects for a goblet immediately after the frequency sweep passes its resonance frequency.",
+        "5": "Prevent any goblet from vibrating or cracking before the frequency sweep reaches its labeled resonance frequency."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Frequency sweep initiated before any goblet vibrates."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Middle goblet starts vibrating only after frequency sweep reaches its natural frequency."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Progression from vibration to resonance is shown sequentially."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Vibration effects cease after the frequency sweep passes the resonance frequency."
+        },
+        "5": {
+          "score": 2,
+          "reason": "No goblet vibrates before the frequency sweep reaches its resonance frequency."
+        }
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Show only the goblet whose labeled natural frequency matches the current sound frequency vibrating at any given time.",
+        "2": "Depict vibration amplitude increasing as the frequency approaches resonance and decreasing as it moves away, with no abrupt or unphysical changes.",
+        "3": "Display structural failure (cracking or distortion) only after sustained resonance at visibly high amplitude for that goblet.",
+        "4": "Show vibration ceasing rapidly and smoothly after the frequency sweep moves past the resonance frequency, consistent with physical damping.",
+        "5": "Prevent multiple goblets from vibrating simultaneously unless their labeled resonance frequencies are identical and matched by the sound."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Only the goblet with matching frequency is shown vibrating."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Vibration amplitude increases smoothly as frequency approaches resonance."
+        },
+        "3": {
+          "score": 2,
+          "reason": "No structural failure is depicted, consistent with the criteria."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Vibration ceases rapidly and smoothly after frequency sweep moves past resonance."
+        },
+        "5": {
+          "score": 2,
+          "reason": "Only one goblet vibrates at a time, matching the driving frequency."
+        }
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Visually highlight the selective vibration of only the goblet whose labeled natural frequency matches the current sound frequency.",
+        "2": "Show a clear, observable cause-and-effect sequence between the frequency sweep and the onset of vibration in the correct goblet.",
+        "3": "Depict non-resonant goblets remaining completely stationary and unaffected throughout the demonstration.",
+        "4": "Include explicit visual or audio cues indicating the exact moment when resonance is achieved for each goblet.",
+        "5": "Avoid any ambiguity in the video about which goblet is responding to the sound at any moment."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Selective vibration of the middle goblet is clearly highlighted when the frequency matches f2."
+        },
+        "2": {
+          "score": 2,
+          "reason": "The sequence shows a clear cause-and-effect relationship between the frequency sweep and the vibration of the middle goblet."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Non-resonant goblets remain stationary and unaffected throughout the demonstration."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Explicit visual cues indicate the exact moment when resonance is achieved for the middle goblet."
+        },
+        "5": {
+          "score": 2,
+          "reason": "There is no ambiguity about which goblet is responding to the sound at any moment."
+        }
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintain alignment between frequency indicators, wave animations, and goblet responses at every moment in the video.",
+        "2": "Keep goblet labels and positions unchanged and clearly visible throughout the entire video.",
+        "3": "Ensure all audio cues, such as pitch changes, match the visual frequency sweep and goblet responses without discrepancy.",
+        "4": "Avoid any contradictory visual or audio information, such as a goblet vibrating without a corresponding frequency indication.",
+        "5": "Present all animated elements, including waves and vibrations, in a style and timing consistent with the rest of the video."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Frequency indicators, wave animations, and goblet responses are consistently aligned."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Goblet labels and positions remain unchanged and clearly visible throughout the video."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Audio cues match the visual frequency sweep and goblet responses without discrepancy."
+        },
+        "4": {
+          "score": 2,
+          "reason": "No contradictory visual or audio information is present."
+        },
+        "5": {
+          "score": 2,
+          "reason": "Animated elements are presented in a consistent style and timing throughout the video."
+        }
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Do not show any goblet vibrating or cracking unless its labeled frequency matches the current sound frequency.",
+        "2": "Avoid any unexplained visual effects, such as unrelated objects moving, glowing, or otherwise drawing attention.",
+        "3": "Exclude out-of-place audio cues, such as random noises or music, that are not directly related to the resonance demonstration.",
+        "4": "Do not depict any goblet responding to frequencies outside the range or context specified in the prompt.",
+        "5": "Omit any visual or audio elements that could suggest incorrect or alternative mechanisms of resonance."
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Goblets vibrate or crack only when the labeled frequency matches the current sound frequency."
+        },
+        "2": {
+          "score": 2,
+          "reason": "No unexplained visual effects are present."
+        },
+        "3": {
+          "score": 2,
+          "reason": "No out-of-place audio cues are depicted."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Goblets respond only to frequencies within the specified range."
+        },
+        "5": {
+          "score": 2,
+          "reason": "No incorrect or alternative mechanisms of resonance are suggested."
+        }
+      }
+    }
+  ]
+}

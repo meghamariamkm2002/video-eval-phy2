@@ -1,0 +1,168 @@
+{
+  "teaching_point": "Resonance occurs when a system is driven by an external force at its natural frequency, leading to large amplitude oscillations.",
+  "prompt": "Show a child sitting on a swing. Initially, the pushes are irregular, and the swing barely moves. Then, demonstrate the child being pushed at regular intervals matching the swing’s natural back-and-forth motion. With each well-timed push, the swing’s amplitude increases noticeably. Clearly highlight that the energy transfer is most efficient when the pushing frequency matches the swing’s natural frequency.",
+  "criteria_set": [  
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Show a child present on the swing for the entire video duration",
+        "2": "Display a swing apparatus clearly identifiable as a pendulum-like seat suspended by ropes or chains",
+        "3": "Depict an initial sequence with pushes delivered at visibly irregular intervals",
+        "4": "Depict a subsequent sequence with pushes delivered at visibly regular, evenly spaced intervals",
+        "5": "Present the irregular push sequence before the regular push sequence in the video timeline"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "The child is present on the swing for the entire video duration."
+        },
+        "2": {
+          "score": 2,
+          "reason": "The swing apparatus is clearly identifiable as a pendulum-like seat suspended by ropes or chains."
+        },
+        "3": {
+          "score": 2,
+          "reason": "The initial sequence shows pushes delivered at visibly irregular intervals."
+        },
+        "4": {
+          "score": 2,
+          "reason": "The subsequent sequence shows pushes delivered at visibly regular, evenly spaced intervals."
+        },
+        "5": {
+          "score": 2,
+          "reason": "The irregular push sequence is presented before the regular push sequence in the video timeline."
+        }
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Show pushes at inconsistent time intervals during the irregular phase",
+        "2": "Show pushes at consistent time intervals during the regular phase",
+        "3": "Transition from irregular to regular pushing with a clear, non-overlapping boundary between phases",
+        "4": "Depict each push occurring when the swing is at or near its turning point in both phases"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Irregular pushing is shown with varying intervals."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Regular pushing is shown with consistent intervals."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Clear transition from irregular to regular pushing is depicted."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Pushes occur at or near the swing's turning point in both phases."
+        }
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Show swing amplitude increasing only when pushes are applied at the swing\u2019s natural frequency",
+        "2": "Show swing amplitude failing to increase significantly when pushes are irregular or mistimed",
+        "3": "Depict swing slowing down and amplitude decreasing over time if no pushes are applied, indicating damping",
+        "4": "Avoid showing swing amplitude increasing without a visible external push or energy input"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Clear demonstration of swing amplitude increasing with well-timed pushes."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Clear demonstration of swing amplitude failing to increase with irregular pushes."
+        },
+        "3": {
+          "score": 0,
+          "reason": "No frames showing swing slowing down and amplitude decreasing over time."
+        },
+        "4": {
+          "score": 2,
+          "reason": "No increase in swing amplitude without visible external push."
+        }
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Show swing amplitude increasing most efficiently during the regular, well-timed push sequence",
+        "2": "Show minimal or no sustained amplitude increase during the irregular push sequence",
+        "3": "Visually contrast the outcomes of irregular and regular pushing to emphasize the difference in amplitude growth",
+        "4": "Depict push frequency matching the swing\u2019s natural frequency as the key factor for efficient amplitude increase"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Clear demonstration of swing amplitude increasing with well-timed pushes."
+        },
+        "2": {
+          "score": 2,
+          "reason": "Clear demonstration of minimal amplitude increase during irregular pushing."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Clear visual contrast between irregular and regular pushing outcomes."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Clear depiction of push frequency matching the swing\u2019s natural frequency for efficient amplitude increase."
+        }
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintain consistent visual appearance of the child, swing, and environment throughout the video",
+        "2": "Show swing motion evolving smoothly without abrupt, unexplained changes in direction or speed",
+        "3": "Maintain consistent timing and magnitude of pushes within each respective phase"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "Consistent visual appearance of the child, swing, and environment throughout the video."
+        },
+        "2": {
+          "score": 1,
+          "reason": "Swing motion is shown but not evolving smoothly; some frames show abrupt changes."
+        },
+        "3": {
+          "score": 2,
+          "reason": "Consistent timing and magnitude of pushes within each respective phase."
+        }
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Avoid showing swing amplitude increasing without visible push or energy input",
+        "2": "Avoid depicting non-physical energy transfer mechanisms, such as swing moving due to gestures or sounds alone",
+        "3": "Avoid including visual or narrative cues that suggest incorrect causes for amplitude increase, such as emotional state or unrelated actions",
+        "4": "Avoid presenting swing motion that violates conservation of energy, such as perpetual motion without damping or input"
+      },
+      "eval_score": {
+        "1": {
+          "score": 2,
+          "reason": "No increase in swing amplitude without visible push or energy input."
+        },
+        "2": {
+          "score": 2,
+          "reason": "No non-physical energy transfer mechanisms depicted."
+        },
+        "3": {
+          "score": 2,
+          "reason": "No incorrect causes for amplitude increase suggested."
+        },
+        "4": {
+          "score": 2,
+          "reason": "Swing motion adheres to conservation of energy principles."
+        }
+      }
+    }
+  ]
+}

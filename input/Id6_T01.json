@@ -1,0 +1,62 @@
+{
+  "teaching_point": "Displacement describes the change in position of an object.",
+  "prompt": "A toy car starts at point A, moves in a straight line to point B, then returns to point A following a wide parabolic arc. At the end of the motion, the straight-line path from point A to point B is softly highlighted on the table surface. The background is a clean wooden table in a brightly lit room.",
+  "criteria_set": [
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Depict both point A and point B clearly and unambiguously in all frames.",
+        "2": "Show the toy car moving from point A to point B along a straight-line path only.",
+        "3": "Show the toy car returning from point B to point A along a visibly wide, continuous parabolic path only.",
+        "4": "Display the car's motion on a flat, clearly visible table surface throughout.",
+        "5": "Present the highlight of the straight-line path between A and B only after the car has come to rest at point A."
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Display the straight-line highlight only after the toy car has fully stopped at point A.",
+        "2": "Omit any straight-line highlight or related visual cue during the car's motion.",
+        "3": "Sequence events as: straight-line motion from A to B, parabolic return from B to A, then highlight appears.",
+        "4": "Prevent any ghost lines, partial highlights, or premature cues of the straight-line path before the car stops."
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Show the toy car moving from A to B in a perfectly straight line without deviation or curvature.",
+        "2": "Depict the return path from B to A as a single, smooth, continuous parabolic arc with no abrupt changes in direction or speed.",
+        "3": "Ensure the car comes to a complete stop at both point B and point A before any subsequent action or highlight.",
+        "4": "Avoid any physically impossible motion, such as instantaneous direction changes, speed jumps, or hovering.",
+        "5": "Present the highlight as appearing only after all car motion has ceased, with no causality violations."
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Emphasize the straight-line path between A and B as the sole representation of displacement after all car motion is complete.",
+        "2": "Use a single, clear, and unambiguous visual highlight to indicate displacement, with no overlap or blending with the car's actual path.",
+        "3": "Omit any highlight or emphasis on the parabolic return path or any path other than the straight line as displacement.",
+        "4": "Time the appearance of the highlight to reinforce that displacement is measured only after the entire motion is finished."
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintain fixed and consistent positions for points A and B in all frames.",
+        "2": "Keep the car's paths and the straight-line highlight spatially aligned with the same reference points (A and B) at all times.",
+        "3": "Display an unchanged table surface and background, free from visual artifacts, throughout the video.",
+        "4": "Prevent any shifting or misalignment of the car, highlight, or reference points between scenes."
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Omit any highlights, arrows, or visual cues that could be interpreted as alternative displacement paths.",
+        "2": "Mark the start and end points of the car's motion clearly and unambiguously at all times.",
+        "3": "Exclude extraneous effects such as glowing trails or multiple highlights that could distract from the intended teaching point.",
+        "4": "Prevent any visual overlap or blending between the parabolic path and the straight-line highlight that could confuse their meanings."
+      }
+    }
+  ]
+}

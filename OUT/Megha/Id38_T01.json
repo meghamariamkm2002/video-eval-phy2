@@ -1,0 +1,176 @@
+{
+    "criteria_set": [
+        {
+            "dimension": "prompt_fidelity",
+            "criteria": {
+                "1": "Depicts exactly two silver metal balls with identical size, shape, and surface appearance at the start of the video",
+                "2": "Depicts one ball visibly hotter (e.g., glowing red) and the other visibly cooler (e.g., not glowing) before contact",
+                "3": "Depicts the two balls being placed in direct physical contact with each other",
+                "4": "Avoids introducing any additional objects, entities, or actions not described in the prompt at any point in the video",
+                "5": "Maintains the identity and properties of both balls throughout the video without unexplained or unprompted changes"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "5": {
+                    "score": 2,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "temporal_accuracy",
+            "criteria": {
+                "1": "Depicts the hot ball retaining its initial color and temperature until the moment of contact",
+                "2": "Depicts the cool ball retaining its initial color and temperature until the moment of contact",
+                "3": "Depicts color and temperature changes in both balls beginning only after contact is established",
+                "4": "Depicts both balls reaching their final, identical appearance only after sufficient time has elapsed following contact",
+                "5": "Avoids depicting any event (such as color change or heat transfer) occurring before its causative action (contact) has taken place"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "5": {
+                    "score": 1,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "physics_correctness",
+            "criteria": {
+                "1": "Depicts heat transfer occurring exclusively during direct physical contact between the balls",
+                "2": "Depicts both balls reaching the same final color and temperature, consistent with thermal equilibrium",
+                "3": "Depicts the hot ball cooling and the cool ball heating at rates consistent with energy conservation and identical material properties",
+                "4": "Avoids depicting any temperature or color change in either ball prior to contact",
+                "5": "Avoids depicting any spontaneous, unexplained, or non-physical changes in temperature or color at any time"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "5": {
+                    "score": 1,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "teaching_point_realization",
+            "criteria": {
+                "1": "Depicts heat flowing from the hot ball to the cool ball only after contact is made",
+                "2": "Depicts both balls reaching the same final color and temperature, visually reinforcing the concept of thermal equilibrium",
+                "3": "Depicts the cessation of temperature and color change in both balls once thermal equilibrium is reached",
+                "4": "Avoids depicting or suggesting heat flow in the direction from the cool ball to the hot ball at any point"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "consistency",
+            "criteria": {
+                "1": "Depicts both balls changing color at the same rate after contact, consistent with identical material and mass",
+                "2": "Depicts both balls reaching the same final appearance with no residual difference in color or glow",
+                "3": "Avoids depicting any asymmetry in the color change process between the balls except for their initial temperature difference"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "absence_of_misleading_content",
+            "criteria": {
+                "1": "Avoids depicting heat transfer or color change in either ball without direct physical contact",
+                "2": "Avoids introducing visual effects or cues (such as sparks, flashes, or unexplained glows) not related to the described heat transfer process",
+                "3": "Avoids depicting any external influence (such as a third object or environmental change) affecting the balls during the process",
+                "4": "Avoids including ambiguous or confusing visual elements that could mislead viewers about the direction or mechanism of heat transfer"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+  "criteria_set": [
+    {
+      "dimension": "prompt_fidelity",
+      "criteria": {
+        "1": "Depicts the initial setup with a visible partition dividing the container and gas confined to one side.",
+        "2": "Displays only the entities specified in the prompt (container, partition, gas) as visually distinct throughout the video.",
+        "3": "Shows the removal of the partition as a clearly observable mechanical event.",
+        "4": "Maintains the initial spatial relation of gas occupying only one compartment until the partition is removed."
+      }
+    },
+    {
+      "dimension": "temporal_accuracy",
+      "criteria": {
+        "1": "Shows the partition being removed before any visible gas movement or expansion occurs.",
+        "2": "Depicts the gas remaining stationary until the partition is fully removed.",
+        "3": "Displays the sequence of partition removal followed immediately by gas expansion in a continuous, unbroken timeline."
+      }
+    },
+    {
+      "dimension": "physics_correctness",
+      "criteria": {
+        "1": "Depicts the gas expanding spontaneously into the available space after partition removal, without any external force or influence.",
+        "2": "Shows the partition being removed by a physically plausible mechanical process, not by disappearance or non-physical means.",
+        "3": "Maintains a constant total amount of gas throughout the video, with no loss or gain of gas.",
+        "4": "Illustrates the gas reaching a uniform distribution in the container after expansion, with no persistent gradients, clumping, or segregation.",
+        "5": "Avoids depicting the gas spontaneously returning to its original compartment or reversing the expansion process."
+      }
+    },
+    {
+      "dimension": "teaching_point_realization",
+      "criteria": {
+        "1": "Visually demonstrates that removing the partition causes the gas to rapidly fill the entire container.",
+        "2": "Depicts the gas occupying the entire container at the end of the process, leaving no empty compartment.",
+        "3": "Shows the expansion as a spontaneous and rapid process, not gradual or externally forced."
+      }
+    },
+    {
+      "dimension": "consistency",
+      "criteria": {
+        "1": "Maintains the visual identity and appearance of the gas, partition, and container throughout the video.",
+        "2": "Keeps the location and boundaries of all entities continuous, with no unexpected changes or discontinuities.",
+        "3": "Displays all actions and events without visual or logical discontinuities, such as objects teleporting or changing form."
+      }
+    },
+    {
+      "dimension": "absence_of_misleading_content",
+      "criteria": {
+        "1": "Excludes any visual cues or actions suggesting external intervention in the gas expansion process.",
+        "2": "Avoids showing the partition being removed by fading out, vanishing, or any non-mechanical means.",
+        "3": "Does not depict non-uniform gas distribution after expansion, such as persistent clumps or gradients.",
+        "4": "Omits any visual elements or annotations that could imply incorrect causes or mechanisms for the gas expansion."
+      }
+    }
+  ]
+}

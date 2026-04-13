@@ -1,0 +1,174 @@
+{
+    "criteria_set": [
+        {
+            "dimension": "prompt_fidelity",
+            "criteria": {
+                "1": "Depicts only a single cube as the manipulated object throughout the video",
+                "2": "Shows a tank containing water as the sole environment for the demonstration",
+                "3": "Illustrates the cube being lowered into the water by an external agent or mechanism",
+                "4": "Displays the cube floating with a portion above the water surface after release",
+                "5": "Excludes any entities, objects, or actions not specified in the prompt"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "5": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "meta": {
+                    "question_valid": "No"
+                }
+            }
+        },
+        {
+            "dimension": "temporal_accuracy",
+            "criteria": {
+                "1": "Shows the cube being lowered into the water before any change in water level occurs",
+                "2": "Depicts the water level rising only as the cube enters the water, with no premature or delayed changes",
+                "3": "Illustrates the cube reaching a floating equilibrium after release, with only natural bobbing allowed",
+                "4": "Maintains a continuous and logical sequence from lowering to floating, without skipped or reversed steps"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "physics_correctness",
+            "criteria": {
+                "1": "Shows the water level rising by an amount proportional to the volume of the cube submerged at each moment",
+                "2": "Depicts the cube slowing as it transitions from being held to floating, indicating buoyant force opposing gravity",
+                "3": "Illustrates the cube floating with a stable portion above the water, consistent with a less-dense-than-water object",
+                "4": "Avoids showing the cube fully submerged or hovering below the surface without visible support",
+                "5": "Shows no water overflowing or disappearing unless the tank is visibly full and overflow is physically justified"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "5": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "teaching_point_realization",
+            "criteria": {
+                "1": "Highlights the rise in water level as a direct result of the cube entering the water",
+                "2": "Emphasizes the cube floating with part of it above the water surface after release",
+                "3": "Visually or narratively links the cube's entry and floating state to the observed change in water level"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "consistency",
+            "criteria": {
+                "1": "Maintains the cube's size, shape, and color consistently throughout the video",
+                "2": "Keeps the water's appearance (color, clarity, level) consistent except for changes due to displacement",
+                "3": "Ensures the tank and background remain unchanged except for actions directly related to the demonstration",
+                "4": "Avoids unexplained changes in lighting, perspective, or object properties between frames"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 0,
+                    "reason": ""
+                }
+            }
+        },
+        {
+            "dimension": "absence_of_misleading_content",
+            "criteria": {
+                "1": "Avoids showing the cube moving in ways that violate gravity or buoyancy (e.g., floating upward before contacting water)",
+                "2": "Does not depict water behaving in non-physical ways (e.g., instant level changes, unnatural shapes, or movement)",
+                "3": "Excludes visual effects or annotations that imply incorrect mechanisms (e.g., arrows suggesting nonexistent forces)",
+                "4": "Does not include extraneous objects or actions that could be interpreted as influencing the outcome"
+            },
+            "eval_score": {
+                "1": {
+                    "score": 2,
+                    "reason": ""
+                },
+                "2": {
+                    "score": 1,
+                    "reason": ""
+                },
+                "3": {
+                    "score": 0,
+                    "reason": ""
+                },
+                "4": {
+                    "score": 1,
+                    "reason": ""
+                }
+            }
+        }
+    ]
+}
