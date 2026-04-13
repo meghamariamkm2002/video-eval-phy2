@@ -1,1 +1,2 @@
 gradio
+opencv-python
